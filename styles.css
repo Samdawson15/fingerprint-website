@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.full-page-image {
+    background-image: url('Finger_1.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Full viewport height */
+}
+
+.text-block {
+    background-color: #f8f8f8; /* Off-white color */
+    color: black;
+    padding: 100px; /* Increased padding for a larger block */
+    position: absolute;
+    bottom: 50;
+    width: 100%;
+    text-align: center;
+}
+
+.link-text {
+    color: black; /* Text color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Make the text bold */
+}
+
+.top-left-text, .top-right-text {
+    position: absolute;
+    color: white; /* White text color */
+    font-size: 14px; /* Small font size */
+    z-index: 10; /* Ensure text is above other elements */
+    font-family: Helvetica, bold, sans-serif;
+    font-weight: bold;
+}
+
+.top-left-text {
+    top: 20px; /* Distance from the top */
+    left: 20px; /* Distance from the left */
+}
+
+.top-right-text {
+    top: 20px; /* Distance from the top */
+    right: 20px; /* Distance from the right */
+}

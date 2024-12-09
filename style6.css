@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%; /* Full height for the body */
+    font-family: Arial, sans-serif; /* Set a default font */
+    background-color: black; /* Black background */
+    color: white; /* White text color */
+}
+
+.container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    height: 100%; /* Full height */
+}
+
+.text-container {
+    max-width: 400px; /* Limit the width of the text container */
+    margin-right: 20px; /* Space between text and image */
+    padding-left: 20px; /* Add padding to the left to move text right */
+}
+
+.centralized-image {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+}

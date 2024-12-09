@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000; /* Optional background color */
+}
+
+.image-container {
+    position: relative; /* Position relative for absolute positioning of text */
+    text-align: center;
+}
+
+img {
+    width: 400px; /* Set a specific width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.hover-text {
+    position: absolute; /* Position the text absolutely */
+    top: 50px; /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%); /* Center the text horizontally */
+    background-color: rgba(97, 0, 0, 0.7); /* Semi-transparent background */
+    color: rgb(0, 0, 0); /* Text color */
+    font-size: xx-large;
+    padding: 10px; /* Padding around the text */
+    border-radius: 0px; /* Rounded corners */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s; /* Smooth transition */
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-decoration: none; /* Remove underline */
+}
+
+.image-container:hover .hover-text {
+    opacity: 1; /* Show text on hover */
+}
+

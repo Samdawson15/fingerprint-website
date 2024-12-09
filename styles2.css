@@ -1,0 +1,112 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .image-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  
+  .full-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* Right-side text */
+.right-text {
+    width: 500px; /* Adjust width to your liking */
+    position: absolute;
+    top: 200px;  /* Adjust to position text as needed */
+    right: 350px;  /* Positioned at the right side */
+    color: rgb(97, 0, 0);
+    background-color: black;
+    padding: 20px;
+    opacity: 3; /* Initially hidden */
+    z-index: 10;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+  }
+  
+  .right-text h1 {
+    font-size: 38px;
+    margin-bottom: 10px;
+    background-color: black;
+    padding: 5px;
+  }
+  
+  .right-text p {
+    font-size: 20px;
+  }
+  
+  .link-text {
+    color: rgb(84, 0, 0); /* Text color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Make the text bold */
+}
+
+  /* Black squares */
+  .black-square {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .black-square:hover {
+    opacity: 1;
+  }
+  
+  /* Positioning squares */
+  .square1 {
+    top: 20%;
+    left: 20%;
+  }
+  
+  .square2 {
+    top: 50%;
+    left: 40%;
+  }
+  
+  .square3 {
+    bottom: 20%;
+    right: 30%;
+  }
+  
+  /* Hover image container */
+  .hover-image-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none; /* Initially hidden */
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+  }
+  
+  #hover-image {
+    max-width: 80%;
+    max-height: 80%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+    border: 5px solid white;
+  }
+  
+  
