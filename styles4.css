@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    background-color: #000000; /* Light background color */
+    position: relative; /* Position relative for absolute positioning of text */
+}
+
+.text-overlay {
+    position: absolute; /* Position the text absolutely */
+    top: 100px; /* Distance from the top */
+    left: 400px; /* Distance from the left */
+    color: white; /* White text color */
+    font-size: 40px; /* Font size */
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold; /* Bold text */
+    z-index: 20; /* Ensure text is above images */
+    text-decoration: dashed;
+}
+
+.text-overlay2 {
+    position: absolute; /* Position the text absolutely */
+    top: 200px; /* Distance from the top */
+    left: 400px; /* Distance from the left */
+    color: rgb(97, 0, 0); /* White text color */
+    font-size: 20px; /* Font size */
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold; /* Bold text */
+    z-index: 20; /* Ensure text is above images */
+    text-decoration: dotted;
+}
+
+.image-container {
+    position: relative; /* Position relative for absolute positioning of images */
+}
+
+.image {
+    width: 300px; /* Set a specific width for the images */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s ease, z-index 0s; /* Smooth transition for transform and z-index */
+}
+
+.image1 {
+    position: absolute; /* Position the first image absolutely */
+    top: -200px; /* Align to the top */
+    left: -200px; /* Align to the left */
+}
+
+.image2 {
+    position: absolute; /* Position the second image absolutely */
+    top: -100px; /* Adjust the vertical position to overlap */
+    left: -100px; /* Adjust the horizontal position to overlap */
+}
+
+.image3 {
+    position: absolute; /* Position the third image absolutely */
+    top: 0px; /* Adjust the vertical position to overlap */
+    left: 0px; /* Adjust the horizontal position to overlap */
+}
+
+.image4 {
+    position: absolute; /* Position the fourth image absolutely */
+    top: 100px; /* Adjust the vertical position to overlap */
+    left: 100px; /* Adjust the horizontal position to overlap */
+}
+
+/* Hover effect */
+.image:hover {
+    transform: scale(3.0); /* Scale the image to 120% */
+    z-index: 10; /* Bring the hovered image to the front */
+}
