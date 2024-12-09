@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Image Overlay</title>
+  <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Text on the right side of the screen -->
+        <div class="right-text">
+        <a href="third-page.html" class="link-text">
+          <h1>ARE WE ALL ON A UNIQUE PATH IN LIFE?</h1>
+        </a>
+        </div>
+
+
+    
+  <div class="image-container">
+    <img src="Map.jpg" alt="Background Image" class="full-image">
+    
+    <!-- Black squares -->
+    <div class="black-square square1" data-hover-image="Mug_1.jpg"></div>
+    <div class="black-square square2" data-hover-image="Mug_2.jpg"></div>
+    <div class="black-square square3" data-hover-image="Mug_3.jpg"></div>
+  </div>
+
+  <!-- Center image on hover -->
+  <div class="hover-image-container">
+    <img id="hover-image" src="" alt="Hover Image">
+  </div>
+
+  <script>
+    // JavaScript for hover effect
+    const squares = document.querySelectorAll('.black-square');
+    const hoverImageContainer = document.querySelector('.hover-image-container');
+    const hoverImage = document.getElementById('hover-image');
+
+    squares.forEach(square => {
+      square.addEventListener('mouseover', () => {
+        const imageSrc = square.getAttribute('data-hover-image');
+        hoverImage.src = imageSrc;
+        hoverImageContainer.style.display = 'flex';
+      });
+
+      square.addEventListener('mouseout', () => {
+        hoverImage.src = '';
+        hoverImageContainer.style.display = 'none';
+      });
+    });
+  </script>
+</body>
+</html>
+
